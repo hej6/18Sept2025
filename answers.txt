@@ -8,11 +8,13 @@
     outputting that message before reading and outputting the contents of the .txt file.
 
 4). It looks like the toString function converts the contents of the file to a format more 
-    compatible with a human (as opposed to the computer).
+    compatible with human eyes (as opposed to the computer).
 
 5). I specified the Content-Type in res.writeHead as txt/plain
 
 6). As mentioned after class we would use a switch case to handle the different file types. Or
     build an object to handle it, both implementations seem like they would work well.
 
-7). Test
+7). We would probably add the view files capability as one of the cases in the switch statement
+    to give the user the choice to view or not. If we need it for our own purposes then it could
+    just run in the background as an async function that can be called when needed.
