@@ -1,0 +1,18 @@
+1). We do not use sudo because we don't need to use "$(which node)" like previously, which
+    requires root priveleges.
+
+2). lab.js reads the contents of the .txt file. It does this in the background while outputting
+    the "after readFile" to console.
+
+3). Due to the async nature of the readFile, the program can execute the quicker action of
+    outputting that message before reading and outputting the contents of the .txt file.
+
+4). It looks like the toString function converts the contents of the file to a format more 
+    compatible with a human (as opposed to the computer).
+
+5). I specified the Content-Type in res.writeHead as txt/plain
+
+6). As mentioned after class we would use a switch case to handle the different file types. Or
+    build an object to handle it, both implementations seem like they would work well.
+
+7). Test
